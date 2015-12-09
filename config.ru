@@ -1,4 +1,5 @@
+require './lib/app.rb'
 require 'rubygems'
-require File.join(File.dirname(__FILE__), 'lib/app.rb')
-
+require 'sinatra'
+# require File.join(File.dirname(__FILE__), 'lib/app.rb')
 run Battle
