@@ -1,3 +1,5 @@
+require 'player'
+
 feature 'Names' do
   scenario 'submitting names' do
     sign_in_and_play
