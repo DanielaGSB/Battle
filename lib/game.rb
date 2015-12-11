@@ -28,12 +28,12 @@ attr_reader :current_turn
   end
 
   def switch_turns
-    @current_turn = opponent_of(current_turn)
+    @current_turn = opp(current_turn)
   end
 
   private
 
-  def opponent_of(current_player)
+  def opp(current_player)
     @players.select { |player| player != current_player }.first
   end
 end
