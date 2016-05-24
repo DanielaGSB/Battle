@@ -11,5 +11,5 @@ def play_and_attack
   fill_in :player_2_name, with: 'Lucas'
   click_button 'Submit'
   click_button 'Attack!'
-  click_button 'Ok'
+  # click_button 'Ok'
 end

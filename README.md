@@ -1,4 +1,10 @@
+Installation Instructions:
+--------------------------------------------------------------------------------
+Clone from github and move into directory.
+Install dependencies by running bundle.
+
 User Stories:
+--------------------------------------------------------------------------------
 
 As two Players,
 So we can play a personalised game of Battle,
@@ -35,7 +41,6 @@ I want Player 2's attack to reduce my HP by 10
 As a Player,
 So I can Lose a game of Battle,
 I want to see a 'Lose' message if I reach 0HP first
-And some Advanced 'extension' User Stories:
 
 As a Player,
 So I can play a suspenseful game of Battle,
