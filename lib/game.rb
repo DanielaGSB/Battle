@@ -15,10 +15,6 @@ attr_reader :current_turn
     @current_turn = player_1
   end
 
-  def attack(player)
-    player.damaged
-  end
-
   def player_1
     @players.first
   end
@@ -31,9 +27,11 @@ attr_reader :current_turn
     @current_turn = opp(current_turn)
   end
 
-  private
-
   def opp(current_player)
     @players.select { |player| player != current_player }.first
   end
+
+  private
+  attr_reader :players
+
 end

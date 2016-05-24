@@ -5,18 +5,6 @@ describe Game do
   let(:player_1) { double :player }
   let(:player_2) { double :player }
 
-  describe '#attack' do
-    it 'damages the player being attacked' do
-      expect(player_2).to receive(:damaged)
-      game.attack(player_2)
-    end
-    it 'ensures player 1 can also be atacked' do
-      game.switch_turns
-      expect(player_1).to receive(:damaged)
-      game.attack(player_1)
-    end
-  end
-
   describe '#current_turn' do
     it 'starts as player 1' do
       expect(game.current_turn).to eq player_1
