@@ -8,6 +8,12 @@ class Attack
   end
 
   def run
-    @player.damaged
+    @player.damaged(amount)
+  end
+
+  private
+
+  def amount
+    Kernel.rand(1..10)
   end
 end
